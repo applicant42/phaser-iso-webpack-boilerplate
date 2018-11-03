@@ -1,0 +1,33 @@
+{
+  "name": "phaser-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "phaser-webpack-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "build": "webpack --config config/webpack.prod.js && cp -R assets/ dist/.",
+    "serve": "webpack-dev-server --config config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alberto78/phaser-webpack-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Alberto Chovares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alberto78/phaser-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/alberto78/phaser-webpack-boilerplate#readme",
+  "dependencies": {
+    "phaser-ce": "2.10.1",
+    "phaser-plugin-isometric": "https://github.com/alberto78/phaser-plugin-isometric"
+  },
+  "devDependencies": {
+    "expose-loader": "0.7.4",
+    "html-webpack-plugin": "2.29.0",
+    "uglifyjs-webpack-plugin": "1.2.0",
+    "webpack": "3.11.0",
+    "webpack-dev-server": "2.11.1"
+  }
+}
